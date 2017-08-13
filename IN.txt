@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb,amsmath}
+\usepackage{watermark}
+\usepackage{eso-pic,calc}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[none]{hyphenat}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\makeatletter
+\sloppy
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,bottom=2cm,top=2cm,headsep=1.5cm}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\large R\ E\ L\ A\ T\ Ó\ R\ I\ O\ \ \ S\ I\ G\ M\ A}
+\end{center}
+\begin{flushleft}
+\line(1,0){485}\\
+Data de Emissão: \\
+Tipo de Relatório: 
+\line(1,0){485}\\
+\end{flushleft}
+
+\begin{center}
+\textbf{Receitas}
+\end{center}
+
+\begin{table}[h]
+    \begin{tabularx}{\textwidth}{l l l l}
+    Data\ \ \ \ \ \ \ \ \ \ \ \ \ & Situação\ \ \ \ \ \ \ \ \ \ & Observacoes\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ & Valor \\
+		\hline
+    04/01/2016 & Quitado & Conserto X & 485   \\
+    06/01/2016 & Quitado & exemplo de texto & 125   \\
+		07/01/2016 & Não Quitado & freio de charrete & 387  \\
+    17/01/2016 & Quitado & Bolinho de aipim & 387  \\
+    23/01/2016 & Não Quitado & Batata & 56    \\
+		& &\textbf{Valor Total} & 1259
+    \end{tabularx}
+\end{table}
+
+\begin{center}
+\textbf{Despesas}
+\end{center}
+
+\end{document}
